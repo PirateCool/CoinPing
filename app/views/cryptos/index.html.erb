@@ -1,0 +1,32 @@
+<br>
+<div class="card" style="margin-left: 25%; margin-right: 25%;">
+  <div class="card-body" style="margin-left: 25%; margin-right: 25%;">
+    Welcome to CryptoInfo, select a cryptomoney :
+  </div>
+</div>
+
+<div style="padding-top: 50px; width:50%; margin:0 auto; text-align: center;">
+	<div class="mid" style="width:50%; margin:0 auto;">
+	    <div class="form-group row" style="width:50%; margin:0 auto;">
+	    	<div class="col-xs-2">
+		        <%= form_tag do %>
+		            <%= select_tag "crypto_name", options_for_select(@crypto.keys), class: 'form-control'%>
+		            <br>
+		            <%= submit_tag "Valider" %>
+		        <% end %>
+		    </div>
+	    </div>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="card" style="margin-left: 25%; margin-right: 25%;">
+	  	<div class="card-body" style="margin-left: 25%; margin-right: 25%;">
+	    	The value of <%= @crypt %> is <%= @cryptovalue %>
+	  	</div>
+	</div>
+
+</div>
