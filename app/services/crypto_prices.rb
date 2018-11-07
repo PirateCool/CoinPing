@@ -16,7 +16,7 @@ class CryptoPrices
 	    end
 
 	    page.css("a.price").each do |x|
-			x = [x.text]
+			x = x.text
 			@@arr2 << x
 		end
 	end
